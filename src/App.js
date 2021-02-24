@@ -72,6 +72,8 @@ function App() {
 
   return (
     <div className="App">
+
+   
       
     <div className="title">
       {question}
@@ -81,20 +83,25 @@ function App() {
       </div>
     </div>
 
-    <div className="description">
-      {description}
+
+    <div class="body">
+      <div className="description">
+        {description}
+      </div>
+
+
+        <div className="tagline">
+          {tagline}
+        </div>
+
+        <div className="buttons">
+        <button onClick={onDisagree} className="button--disagree">Disagree</button>
+          <button onClick={onAgree} className="button--agree">Agree</button>
+        
+        </div>
     </div>
 
-
-      <div className="tagline">
-        {tagline}
-      </div>
-
-      <div className="buttons">
-      <button onClick={onDisagree} className="button--disagree">Disagree</button>
-        <button onClick={onAgree} className="button--agree">Agree</button>
-      
-      </div>
+  
     </div>
   );
 }
