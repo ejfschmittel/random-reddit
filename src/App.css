@@ -82,3 +82,44 @@ button{
   color: #fff;
 }
 
+
+@media only screen and (max-width: 600px) {
+
+ html{
+    font-size: 12px;
+  }
+  
+
+  .title{
+    margin: -2rem;
+    margin-bottom: 1rem;
+  }
+  .App{
+    width: 100%;
+    height: 100vh;
+    min-height: 200px;
+    border-radius: 0;
+    background: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  
+  .subtitle{
+    font-size: .9rem;
+    margin-bottom: -1.5rem;
+    letter-spacing: .1rem;
+    
+  }
+
+  .description{
+    flex: 1;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+
+
+
+}
